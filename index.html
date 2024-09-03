@@ -1,0 +1,46 @@
+
+<html>
+<head>
+  <title>TFM Cristian Félix Chaves Muñoz</title>
+  <script src="js/main.js" type="module"></script>
+  <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+
+</head>
+
+<body id="body" Style="/*evitar la selección al pulsar la pantalla*/-webkit-touch-callout:none; /* iOS Safari */ -webkit-user-select:none;/* Chrome/Safari/Opera */ -moz-user-select:none;/* Firefox */ -ms-user-select:none;/* Internet Explorer/Edge */ user-select:none; /* Non-prefixed version */">
+
+  <canvas id="glcanvas" style="position:absolute; top: 0; left: 0;  right: 0;"></canvas>
+
+  <canvas id="canvas2d" style="position:absolute; width: 100%; height: 100%; top: 0; left: 0;  right: 0; "></canvas>
+
+
+  <button id="a1" style="position:absolute; top: 0; left: 0;  right: 0;"onclick="openFullscreen();">pantalla completa</button>
+  <script>
+    
+    var elem = document.getElementById("body");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      } else if (elem.webkitEnterFullScreen) {/* safari */
+        elem.webkitEnterFullScreen();
+      }
+
+
+      document.getElementById("a1").remove(); //borra el boton
+
+
+      screen.orientation.lock('landscape'); //para que no pueda cambiar la orientacion
+    }
+
+    
+
+    </script>
+
+</body>
+</html>
+
+

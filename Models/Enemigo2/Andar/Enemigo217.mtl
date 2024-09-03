@@ -1,0 +1,12 @@
+# Blender 4.0.2 MTL File: 'Enemigo2-7.blend'
+# www.blender.org
+
+newmtl Material
+Ns 282.848694
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.050000
+d 0.764045
+illum 9
+map_Kd Texture.png
